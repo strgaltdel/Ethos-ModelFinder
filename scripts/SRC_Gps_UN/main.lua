@@ -88,8 +88,6 @@ end
 
 local function readGPSfromFile()
 	local data = {}
-	--local filename = FPATH_COORD.. model.name() .. model.id()
---	print("enter read, mustP state---------------",LastGps.mustPaint )
 	local fName = model.name()	
 	filename = FPATH_COORD.. fName..".txt"
 

@@ -26,7 +26,7 @@
 -- redraw even if not necessary
 -- restart after longer pause cause immediate redraw without prompting "processing"
 -- loss of gps lock is not flagged by ethos
--- display of hdop /nsat woulkd be an improvement
+-- display of hdop /nsat would be an improvement
 
 
 
@@ -1560,10 +1560,7 @@ local function create()
 	local layout = {}															-- display dependend layout variables
 	local theme = {}															-- colors etc..
 	local button = {}
-	--local horus = {}	
-	--	horus.start= "GPS_A"
-	--	horus.save = "GPS_B"
-	--	horus.load = "GPS_C"
+
 		
 	txt = dofile("lang.lua")		
 
@@ -1670,7 +1667,7 @@ local function frontendConfigure(widget)
 	local ButH =widget.layout.butHeight				-- button height
 	
 	widget.button = {
-	--		xRel (xPos),					yRel (yPos),		widthRel,		heightRel, 	"real"color, 	theme colorname	 std	mode		complementary color							text,			txtAlternate			textCol
+	--		xRel (xPos),				yRel (yPos),	widthRel,	heightRel, 	"real"color, theme colorname std mode	complementary color		text,			txtAlternate			textCol
 		{	xRel=widget.layout.tab0,	yRel=ButY,		wRel=30,	hRel=ButH, 	color=nil,	colorname="c_ButGrey",	color2="c_ButGreen",	txt="  Start",	txtAlt="  Stop",	txtCol=widget.theme.c_textInvert},
 		{	xRel=widget.layout.tab2,	yRel=ButY,		wRel=22,	hRel=ButH, 	color=nil,	colorname="c_ButRed",	color2="c_ButBlue",		txt="SAVE",		txtAlt=nil,			txtCol=widget.theme.c_textInvert},
 		{	xRel=widget.layout.tab3,	yRel=ButY,		wRel=22,	hRel=ButH, 	color=nil,	colorname="c_ButGrey",	color2="c_ButGreen",	txt="LOAD",		txtAlt=nil,			txtCol=widget.theme.c_textInvert}
@@ -2061,7 +2058,6 @@ local function wakeup(widget)
 		end
 
 		widget.gps.mustCalc = (widget.gps.foreground and (LastGps.lastPaint	 < (os.clock() -INTERVAL))  or widget.gps.LoadMustPaint ) and  LastGps.lat ~=0  and  widget.w ~=nil
---		print("Status A (FG)...",widget.gps.foreground," ::  ",widget.gps.modeLoad,	widget.gps.LoadMustPaint ,"    >>>    ",widget.gps.mustCalc)
 		lcd.invalidate()																-- enforce screen refresh / paint(widget)
 
 end
