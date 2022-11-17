@@ -1,9 +1,7 @@
 #                                           Ethos-ModelFinder 1.0
 
 ![3in1 title](https://raw.githubusercontent.com/strgaltdel/Ethos-ModelFinder/master/img/title.png)
-
-
-##An Ethos widget to display GPS coordinates as a QR code for easy location tracking via mobile phone.
+#An Ethos widget to display GPS coordinates as a QR code for easy location tracking via mobile phone.
 November 2022
 
 
@@ -29,10 +27,14 @@ The widget should also work with all other Ethos transmitters
 
 
 
+------------------------------------------------------------------------------------------------------------------------
 
 
 
-##Ein Ethos Widget zur Darstellung der GPS Koordinaten als QR Code um den Standort einfach per Handy orten zu können
+
+
+
+###Ein Ethos Widget zur Darstellung der GPS Koordinaten als QR Code um den Standort einfach per Handy orten zu können
 
 
 ### Kompatibilität
